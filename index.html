@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Readify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+
+  <h2>
+    <img src="images/books/logo.png"width="60">Readify
+  </h2>
+
+  <!-- ✅ HAMBURGER ICON (THIS WAS MISSING) -->
+  <div class="hamburger">
+    <img src="icons/menu.png" width="22">
+  </div>
+
+  <div class="links">
+
+    <a href="index.html">
+      <img src="icons/home.png" width="18"> Home
+    </a>
+
+    <a href="explorer.html">
+      <img src="icons/explorer.png" width="18"> Explorer
+    </a>
+
+    <a href="tracker.html">
+      <img src="icons/tracker.png" width="18"> Tracker
+    </a>
+
+    <a href="recommender.html">
+      <img src="icons/pick.png" width="18"> Pick
+    </a>
+
+    <a href="flow.html">
+      <img src="icons/flow.png" width="18"> Flow
+    </a>
+
+    <a href="feedback.html">
+      <img src="icons/feedback.png" width="18"> Feedback
+    </a>
+
+  </div>
+
+</nav>
+<main>
+    <section class="intro">
+      <img src="images/books/lan book.jpg"alt="Cozy Library" class="intro-image">
+      <div class="intro-text">
+        <p>"Step into Readify, a community library where every book is an adventure. From fantasy to fiction, find stories that inspire, entertain, and ignite your imagination.
+
+Readify brings the joy of reading to your fingertips. Explore diverse stories, discover new authors, and enjoy a cozy space for book lovers of all ages."
+      </div>
+    </section>
+  </main>
+
+
+
+<!-- HERO -->
+<section class="hero-full">
+
+  <div class="hero-content">
+    <h1 id="quote"></h1>
+    <p>Author of the Day: <span id="author"></span></p>
+
+    
+  </div>
+
+</section>
+
+
+<!-- FEATURED BOOKS -->
+<section class="featured">
+  <h2> Featured Books</h2>
+  <div id="featuredGrid" class="grid"></div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--Footer-->
+
+<footer>
+ <footer class="footer">
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-col">
+      <h3 class="footer-logo">Readify</h3>
+      <p class="footer-text">
+        Readify is a digital library that connects readers with knowledge,
+        stories, and learning resources from around the world.
+      </p>
+      <a href="#" class="read-more">read more →</a>
+    </div>
+
+    <!-- Categories -->
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">Fiction</a></li>
+        <li><a href="#">Non-Fiction</a></li>
+        <li><a href="#">Academic</a></li>
+        <li><a href="#">Children</a></li>
+        <li><a href="#">Help & Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Tag Cloud -->
+    <div class="footer-col">
+      <h4>Tag Cloud</h4>
+      <div class="tags">
+        <span>Books</span>
+        <span>Library</span>
+        <span>Reading</span>
+        <span>Education</span>
+        <span>Knowledge</span>
+        <span>Research</span>
+      </div>
+    </div>
+
+    <!-- Subscribe -->
+    <div class="footer-col">
+      <h4>Subscribe</h4>
+      <div class="subscribe-box">
+        <input type="email" placeholder="Enter email address">
+        <button>➤</button>
+      </div>
+
+      <h4 class="follow-title">Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://twitter.com/yourhandle" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path fill="#1DA1F2" d="M23.954 4.569c-.885.392-1.83.656-2.825.775 
+      1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184
+      -.897-.959-2.178-1.555-3.594-1.555-2.717 0-4.924 2.207-4.924 4.924
+      0 .39.045.765.127 1.124-4.092-.205-7.719-2.165-10.148-5.144
+      -.423.724-.666 1.562-.666 2.457 0 1.695.86 3.188 2.169 4.066
+      -.798-.026-1.549-.245-2.205-.612v.061c0 2.367 1.683 4.342 3.918 4.788
+      -.41.111-.844.171-1.292.171-.316 0-.624-.03-.927-.086
+      .625 1.951 2.444 3.376 4.6 3.415-1.68 1.318-3.809 2.105-6.115 2.105
+      -.397 0-.788-.023-1.175-.068 2.179 1.397 4.768 2.212 7.557 2.212
+      9.054 0 14-7.496 14-13.986 0-.21 0-.42-.015-.63.962-.695 1.8-1.562 2.46-2.549z"/>
+  </svg>
+</a>
+
+        <a href="https://facebook.com/yourhandle" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073
+      c0 5.991 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.413
+      c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513
+      c-1.492 0-1.954.926-1.954 1.875v2.25h3.328l-.532 3.469h-2.796v8.385
+      C19.612 23.027 24 18.064 24 12.073z"/>
+  </svg>
+</a>
+
+        <a href="https://instagram.com/yourhandle" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <linearGradient id="instaGradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f58529"/>
+      <stop offset="50%" stop-color="#dd2a7b"/>
+      <stop offset="100%" stop-color="#515bd4"/>
+    </linearGradient>
+    <path fill="url(#instaGradient)" d="M12 2.163c3.204 0 3.584.012 4.849.07 
+      1.366.062 2.633.33 3.608 1.304.975.975 1.242 2.242 1.304 3.608.058 1.265.069 1.645.069 4.849
+      0 3.204-.012 3.584-.07 4.849-.062 1.366-.33 2.633-1.304 3.608-.975.975-2.242 1.242-3.608 1.304
+      -1.265.058-1.645.069-4.849.069-3.204 0-3.584-.012-4.849-.07-1.366-.062-2.633-.33-3.608-1.304
+      -.975-.975-1.242-2.242-1.304-3.608C2.175 15.584 2.163 15.204 2.163 12c0-3.204.012-3.584.07-4.849
+      .062-1.366.33-2.633 1.304-3.608.975-.975 2.242-1.242 3.608-1.304C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.736 0 8.332.013 7.052.072 5.773.13 4.603.39 3.678 1.315 2.753 2.24 2.493 3.41 2.435 4.689 2.377 5.969 2.363 6.373 2.363 12s.013 6.031.072 7.311c.058 1.279.318 2.449 1.243 3.374.925.925 2.095 1.185 3.374 1.243 1.28.058 1.684.072 7.311.072s6.031-.013 7.311-.072c1.279-.058 2.449-.318 3.374-1.243.925-.925 1.185-2.095 1.243-3.374.058-1.28.072-1.684.072-7.311s-.013-6.031-.072-7.311c-.058-1.279-.318-2.449-1.243-3.374-.925-.925-2.095-1.185-3.374-1.243C18.031.013 17.627 0 12 0z"/>
+    <circle fill="url(#instaGradient)" cx="12" cy="12" r="3.6"/>
+    <circle fill="url(#instaGradient)" cx="18.406" cy="5.594" r="1.44"/>
+  </svg>
+</a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Copyright © 2026 All rights reserved | Readify</p>
+    <div class="footer-links">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Compliance</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
